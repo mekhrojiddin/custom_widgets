@@ -94,7 +94,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           ),
                           Padding(
                             padding: const EdgeInsets.fromLTRB(1, 10, 180, 0),
-                            child: Text("F.I.Sh"),
+                            child: Text("Ziyodullayev Mekhrojiddin"),
                           ),
                           Padding(
                             padding: const EdgeInsets.fromLTRB(1, 10, 180, 0),
@@ -102,7 +102,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
                           ),
                           Padding(
                             padding: const EdgeInsets.fromLTRB(1, 10, 180, 0),
-                            child: Text("F.I.Sh"),
+                            child: Text("Samarqand viloyati"),
                           ),
                         ],
                       ),

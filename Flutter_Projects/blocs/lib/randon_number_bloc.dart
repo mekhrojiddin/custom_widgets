@@ -1,15 +1,18 @@
 import 'dart:async';
+import 'dart:math';
 
 import 'package:bloc/bloc.dart';
 import 'package:meta/meta.dart';
 
 part 'randon_number_event.dart';
-part 'randon_number_state.dart';
 
-class RandonNumberBloc extends Bloc<RandonNumberEvent, RandonNumberState> {
-  RandonNumberBloc() : super(RandonNumberInitial()) {
-    on<RandonNumberEvent>((event, emit) {
-      // TODO: implement event handler
+class RandonNumberBloc extends Bloc<RandonNumberEvent, int> {
+  RandonNumberBloc() : super(0) {
+    on<GenerateNewRandonNumber>((event, emit) {
+      final random=Random();
+      final randomNumber=random.nextInt(100);
+      emit(randomNumber);
     });
   }
 }
+

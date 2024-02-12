@@ -1,4 +1,7 @@
 part of 'randon_number_bloc.dart';
 
-@immutable
-abstract class RandonNumberEvent {}
+
+sealed class RandonNumberEvent {}
+
+class GenerateNewRandonNumber extends RandonNumberEvent {
+}

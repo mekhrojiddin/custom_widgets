@@ -128,8 +128,11 @@ class _ProfileEditState extends State<ProfileEdit> {
               ),
             ),
           ),
-          Gap(300),
-          Container(
+        ],
+      ),
+      bottomNavigationBar: BottomAppBar(
+        child: GestureDetector(
+          child:   Container(
             width: 380,
             height: 50,
             decoration: BoxDecoration(
@@ -137,7 +140,7 @@ class _ProfileEditState extends State<ProfileEdit> {
                 color: Color(0xFFF0CB23)),
             child: Center(child: Text('Saqlash')),
           ),
-        ],
+        ),
       ),
     );
   }
